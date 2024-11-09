@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Delius Swash Caps", cursive;
+  background: #212222;
+  color: rgb(255, 255, 255);
+  line-height: 1.6;
+}
+header {
+  display: flex;
+  padding: 5px;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  background: #302f2f;
+  justify-content: center;
+}
+h1 a {
+  color: white;
+  text-decoration: none;
+}
+.Favorite {
+  color: white;
+  position: relative;
+  left: 200px;
+  top: 10px;
+  text-decoration: none;
+}
+.title {
+  font-family: "Delius Swash Caps", cursive;
+  font-size: 2rem;
+  height: 50px;
+}
+
+.country-info {
+  display: flex;
+  color: #ffffff;
+  gap: 64px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.country-info img {
+  width: 40%;
+}
+.details-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  column-gap: 40px;
+  height: 250px;
+  flex-wrap: wrap;
+  max-height: 250px;
+}
+.details-text p {
+  margin: 0;
+}
+.backbtn {
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  color: white;
+  background: #302f2f;
+  padding: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  outline: none;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.Favorite {
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Favorite i.active {
+  color: red;
+}
+
+/* Style for the confirmation message */
+#confirmationMessage {
+  color: lightgreen;
+  font-size: 1rem;
+  margin-top: 10px;
+  display: none; 
+}
+
+/* Media queries */
+@media (max-width: 840px) {
+  .country-info {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 32px;
+    gap: 32px;
+  }
+
+  .details-text {
+    max-height: unset;
+  }
+  .country-info img {
+    width: 100%;
+    max-width: 500px;
+  }
+  .Favorite {
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header{
+    width: 160%;
+  }
+  .title{
+    font-size: 28px;
+  }
+}

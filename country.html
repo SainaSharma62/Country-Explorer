@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Detail</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="country.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">
+        <a href="index.html">Explore Your Favorite Country</a>
+      </h1>
+    </header>
+
+    <button class="backbtn" onclick="history.back()">
+      <i class="fa-solid fa-arrow-left"></i> Back
+    </button>
+    <div class="container">
+      <main class="content-wrapper">
+        <div class="country-info">
+          <img id="flagImage" src="" alt="Country Flag" />
+          <div class="details-text">
+            <h2 id="countryHead">Country Name</h2>
+            <p><strong>Population:</strong> <span id="population"></span></p>
+            <p><strong>Region:</strong> <span id="region"></span></p>
+            <p><strong>Area:</strong> <span id="area"></span></p>
+            <p>
+              <strong>Top Level Domain:</strong>
+              <span id="topLevelDomain"></span>
+            </p>
+            <p><strong>Capital:</strong> <span id="capital"></span></p>
+            <p><strong>Currencies:</strong> <span id="currencies"></span></p>
+            <p><strong>Languages:</strong> <span id="languages"></span></p>
+            <button id="favoriteToggle">
+              <i class="fa-solid fa-heart"></i>
+              <span>Add to Favorite</span>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="country.js"></script>
+  </body>
+</html>
